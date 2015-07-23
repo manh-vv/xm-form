@@ -51,7 +51,7 @@ namespace xm_form.mvv.app.utility
 			if (imgBytes.Length > (40 * 1024))
 			{
 				var imgUtils = DependencyService.Get<IImageUtils>();
-				imgUtils.ResignImage(imgBytes, 320, 480, whenDone);
+				imgUtils.ResignImage(imgBytes, 480, 320, whenDone);
 			}
 			else
 			{

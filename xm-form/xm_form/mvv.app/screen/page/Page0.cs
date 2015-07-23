@@ -85,6 +85,14 @@ namespace xm_form.mvv.app.screen.page
 			var imgUri = @"http://cdn.wall88.com/51b806946733147148.jpg";
 
 			ImageUtils.DownloadImage(imgUri, AddImage);
+
+			imgUri = @"http://www.10wallpaper.com:8080//wallpaper/1920x1200/1207/Asian_Women_Grassland-beautiful_girls_photo_wallpaper_1920x1200.jpg";
+
+			ImageUtils.DownloadImage(imgUri, AddImage);
+
+			imgUri = @"http://www.10wallpaper.com:8080//wallpaper/1920x1440/1410/Cool_Emma_Watson-Photo_HD_Wallpaper_1920x1440.jpg";
+
+			ImageUtils.DownloadImage(imgUri, AddImage);
 		}
 
 		private void AddImage(byte[] imgBytes)
