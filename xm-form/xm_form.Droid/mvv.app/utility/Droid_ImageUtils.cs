@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using Android.Graphics;
@@ -22,7 +23,7 @@ namespace xm_form.Droid.mvv.app.utility
 			// Load the bitmap
 			var originalImage = BitmapFactory.DecodeByteArray(imageData, 0, imageData.Length);
 			var resizedImage = Bitmap.CreateScaledBitmap(originalImage, (int)width, (int)height, false);
-
+			
 			byte[] bytes;
 
 			using (var ms = new MemoryStream())

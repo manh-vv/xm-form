@@ -15,7 +15,7 @@ namespace xm_form.mvv.app.utility
 					if (cacheImage != null)
 					{
 						Debug.WriteLine("---- I found image is cached");
-						whenDone.Invoke(cacheImage.imgBytes);
+						ScaleLargeImage(cacheImage.imgBytes, whenDone);
 						return;
 					}
 
@@ -23,16 +23,8 @@ namespace xm_form.mvv.app.utility
 
 					imgUtils.DownloadImage(imgUri, async bytes =>
 					{
-						Debug.WriteLine("---- Byte size = {0}", bytes.Length / 1024);
 
-						if (bytes.Length > (40*1024))
-						{
-							imgUtils.ResignImage(bytes, 320, 320, whenDone);
-						}
-						else
-						{
-							whenDone.Invoke(bytes);
-						}
+						ScaleLargeImage(bytes, whenDone);
 
 						// save to db
 						cacheImage = new CacheImage
@@ -49,6 +41,22 @@ namespace xm_form.mvv.app.utility
 					});
 				}
 				);
+		}
+
+		private static void ScaleLargeImage(byte[] imgBytes, Action<byte[]> whenDone)
+		{
+			Debug.WriteLine("---- Byte size = {0}", imgBytes.Length / 1024);
+			
+
+			if (imgBytes.Length > (40 * 1024))
+			{
+				var imgUtils = DependencyService.Get<IImageUtils>();
+				imgUtils.ResignImage(imgBytes, 320, 480, whenDone);
+			}
+			else
+			{
+				whenDone.Invoke(imgBytes);
+			}
 		}
 
 		private static string BuildIndexFromImageUri(string imgUri)

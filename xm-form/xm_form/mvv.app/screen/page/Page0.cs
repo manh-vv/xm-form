@@ -94,8 +94,8 @@ namespace xm_form.mvv.app.screen.page
 			var img = new Image
 			{
 				VerticalOptions = LayoutOptions.End,
-				HeightRequest = 300,
-				WidthRequest = 300,
+				HeightRequest = 320,
+				WidthRequest = 480,
 				Source = ImageSource.FromStream(() => new MemoryStream(imgBytes))
 			};
 
