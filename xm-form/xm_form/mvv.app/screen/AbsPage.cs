@@ -42,6 +42,8 @@ namespace xm_form.mvv.app.screen
                 var layout = new StackLayout
                 {
                     Orientation = StackOrientation.Vertical,
+					HorizontalOptions = LayoutOptions.FillAndExpand,
+					VerticalOptions = LayoutOptions.FillAndExpand,
                     Children = {_TopBar, content}
                 };
 

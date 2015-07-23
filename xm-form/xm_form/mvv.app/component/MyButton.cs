@@ -10,7 +10,7 @@ namespace xm_form.mvv.app.component
         {
             BorderColor = Color.Fuchsia;
             HeightRequest = UiConst.LINE_HEIGHT;
-            WidthRequest = HeightRequest*1.3;
+//            WidthRequest = HeightRequest*1.3;
             BackgroundColor = UiConst.COLOR_DF_BGC;
             BorderRadius = 0;
         }

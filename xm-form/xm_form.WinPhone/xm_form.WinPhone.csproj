@@ -98,6 +98,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="mvv.app\utility\FileAccessHelper.cs" />
+    <Compile Include="mvv.app\utility\Wp_ImageUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\AppResources.Designer.cs">
       <AutoGen>True</AutoGen>

@@ -14,4 +14,3 @@ F:\WorkingPlace\VisualStudio\xm-form\xm-form\xm_form\bin\Debug\Xamarin.Forms.Cor
 F:\WorkingPlace\VisualStudio\xm-form\xm-form\xm_form\bin\Debug\Xamarin.Forms.Xaml.xml
 F:\WorkingPlace\VisualStudio\xm-form\xm-form\xm_form\obj\Debug\xm_form.dll
 F:\WorkingPlace\VisualStudio\xm-form\xm-form\xm_form\obj\Debug\xm_form.pdb
-F:\WorkingPlace\VisualStudio\xm-form\xm-form\xm_form\obj\Debug\xm_form.csprojResolveAssemblyReference.cache

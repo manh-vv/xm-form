@@ -41,6 +41,8 @@
     <Compile Include="mvv.app\component\MyButton.cs" />
     <Compile Include="mvv.app\component\MyStackLayout.cs" />
     <Compile Include="mvv.app\component\TopBar.cs" />
+    <Compile Include="mvv.app\model\CacheImage.cs" />
+    <Compile Include="mvv.app\model\DbModel.cs" />
     <Compile Include="mvv.app\screen\AbsPage.cs" />
     <Compile Include="mvv.app\screen\MainPage.cs" />
     <Compile Include="mvv.app\screen\page\Page0.cs" />
@@ -50,6 +52,8 @@
     <Compile Include="mvv.app\screen\page\Page1.cs" />
     <Compile Include="mvv.app\utility\DateUtils.cs" />
     <Compile Include="mvv.app\utility\DenyAction.cs" />
+    <Compile Include="mvv.app\utility\IImageUtils.cs" />
+    <Compile Include="mvv.app\utility\ImageUtils.cs" />
     <Compile Include="mvv.app\utility\LocalDb.cs" />
     <Compile Include="mvv.app\utility\UiConst.cs" />
     <Compile Include="mvv.app\utility\UiUtils.cs" />

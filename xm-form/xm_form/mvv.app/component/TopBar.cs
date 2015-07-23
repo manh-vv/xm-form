@@ -41,7 +41,7 @@ namespace xm_form.mvv.app.component
             {
                 Orientation = StackOrientation.Horizontal,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
-                VerticalOptions = LayoutOptions.StartAndExpand,
+                VerticalOptions = LayoutOptions.Start,
                 Children =
                 {
                     _lBtn,
